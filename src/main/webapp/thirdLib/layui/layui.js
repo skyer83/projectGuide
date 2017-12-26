@@ -236,9 +236,9 @@
       if(++timeout > config.timeout * 1000 / 100){
         return error(href + ' timeout');
       };
-      parseInt(that.getStyle(doc.getElementById(id), 'width')) === 1989 ? function(){
+      parseInt(that.getStyle(doc.getElementById(id), 'width')) === 1989 ? (function(){
         fn();
-      }() : setTimeout(poll, 100);
+      }()) : setTimeout(poll, 100);
     }());
     
     return that;
@@ -316,10 +316,10 @@
     
     //提取Hash结构
     that.each(hash, function(index, item){
-      /^\w+=/.test(item) ? function(){
+      /^\w+=/.test(item) ? (function(){
         item = item.split('=');
         data.search[item[0]] = item[1];
-      }() : data.path.push(item);
+      }()) : data.path.push(item);
     });
 
     return data;

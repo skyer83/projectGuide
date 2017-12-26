@@ -309,16 +309,16 @@ Class.pt.creat = function(){
   //建立容器
   that.vessel(conType, function(html, titleHTML, moveElem){
     body.append(html[0]);
-    conType ? function(){
-      (config.type == 2 || config.type == 4) ? function(){
+    conType ? (function(){
+      (config.type == 2 || config.type == 4) ? (function(){
         $('body').append(html[1]);
-      }() : function(){
+      }()) : (function(){
         if(!content.parents('.'+doms[0])[0]){
           content.data('display', content.css('display')).show().addClass('layui-layer-wrap').wrap(html[1]);
           $('#'+ doms[0] + times).find('.'+doms[5]).before(titleHTML);
         }
-      }();
-    }() : body.append(html[1]);
+      }());
+    }()) : body.append(html[1]);
     $('.layui-layer-move')[0] || body.append(ready.moveElem = moveElem);
     that.layero = $('#'+ doms[0] + times);
     config.scrollbar || doms.html.css('overflow', 'hidden').attr('layer-full', times);
