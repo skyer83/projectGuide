@@ -1,3 +1,7 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/index.jsp=UTF-8
+encoding//src/main/webapp/thirdLib/layui/css/global.css=UTF-8
+encoding//src/main/webapp/thirdLib/layui/css/layui.css=UTF-8
+encoding//src/main/webapp/thirdLib/layui/css/layui.mobile.css=UTF-8
 encoding//src/main/webapp/thirdLib/layui/lay/modules/carousel.js=UTF-8
 encoding/<project>=UTF-8
