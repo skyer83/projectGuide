@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>狗狗123</title>
+<title>black的项目导航</title>
 <link rel="stylesheet" href="thirdLib/layui/css/layui.css">
 <link rel="stylesheet" href="thirdLib/layui/css/global.css">
 </head>
